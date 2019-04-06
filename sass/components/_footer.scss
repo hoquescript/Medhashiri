@@ -1,0 +1,37 @@
+.footer {
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-secondary-light;
+        margin-bottom: 1rem;
+    }
+    &__name {
+        // border-right: 2px dotted $color-secondary-dark;
+        &--title {
+            font-size: 4rem;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        &--sub-title {
+            font-size: 2rem;
+            color: $color-secondary-light;
+        }
+    }
+    &__link {
+        text-transform: uppercase;
+        a {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+    }
+    &__address,
+    &__contact {
+        color: #fff;
+        font-size: 1.4rem;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+}

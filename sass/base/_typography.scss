@@ -1,0 +1,21 @@
+body {
+    font-family: "Lato", sans-serif;
+    // color: $color-grey-dark;
+    font-weight: 400;
+}
+
+.heading-primary {
+    font-size: 5rem;
+    // font-weight: 400;
+    background: linear-gradient(to right, #ed213a, #93291e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    word-spacing: 10px;
+}
+
+.heading-secondary {
+    color: #fff;
+    font-size: 4rem;
+    // font-weight: 400;
+}

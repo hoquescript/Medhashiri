@@ -1,0 +1,109 @@
+.header {
+
+    //Main Logo Of The Website
+    .headline {
+        padding: 2rem 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        & * {
+            height: 12rem;
+        }
+
+        &__logo {
+            margin-left: 7rem;
+        }
+
+        &__title {
+            margin-left: 7rem;
+        }
+
+        &__msg {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-right: 3rem;
+            img {
+                height: 10rem;
+            }
+        }
+    }
+
+    //Main Navigation Menu-bar
+    .navigation {
+        background-color: $color-primary-medium;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__list::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        &__item {
+            float: left;
+        }
+
+        &__link {
+
+            &:link,
+            &:visited {
+                display: block;
+                padding: 2rem 2rem;
+                transition: transform .2s;
+                color: #fff;
+            }
+        }
+
+        &__link:hover {
+            // color: $color-primary-dark;
+            transform: translateY(-4px);
+        }
+
+        //Sublink of Navigation Bar
+        .sublink {
+            position: relative;
+
+            &__list {
+                position: absolute;
+                left: 0;
+                z-index: 11;
+                background-color: $color-white;
+                box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.4);
+                width: 26rem;
+                display: none;
+            }
+
+            &__link {
+
+                &:link,
+                &:visited {
+                    display: block;
+                    padding: 1.5rem 1.5rem;
+                    transition: all .4s;
+                }
+            }
+
+            &__link:hover {
+                color: $color-primary-medium;
+            }
+
+            &:hover .sublink__list {
+                display: block;
+            }
+        }
+
+    }
+}

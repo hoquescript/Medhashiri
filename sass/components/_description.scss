@@ -1,0 +1,29 @@
+.description {
+    &__hero-img {
+        min-height: 40rem;
+        background-size: cover;
+        &--mission {
+            background-image: url('../img/slider/slide7.jpg');
+            background-position: 0 -10rem;
+        }
+        &--school {
+            background-image: url('../img/hero-img/bus-school-school-bus-yellow-159658.jpeg');
+            background-position: 0 -6rem;
+        }
+        &--coaching {
+            background-image: url('../img/slider/slide2.jpg');
+            background-position: 0 -16rem;
+        }
+        &--drawing {
+            background-image: url('../img/hero-img/maxresdefault.jpg');
+            background-position: 0 -2rem;
+        }
+    }
+    &__body {
+        padding: 7rem 0 10rem 0;
+    }
+    &__text {
+        font-size: 1.6rem;
+        color: #333;
+    }
+}

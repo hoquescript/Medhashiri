@@ -1,0 +1,28 @@
+//Admission > Admission Procedure
+.procedure{
+    font-size: 1.8rem;
+    &__list{
+        margin-left: 10rem;
+    }
+    &__item{
+        list-style-type: disc;
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+//News & Event > Gallery
+.section-gallery{
+    padding: 7rem 0 10rem 0;
+}
+
+//News & Event > Prospectus
+.section-prospectus{
+    padding: 5rem 0;
+}
+.prospectus{
+    &__img{
+        width: 100%;
+    }
+}

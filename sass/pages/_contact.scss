@@ -1,0 +1,54 @@
+.section-contact-form{
+    padding: 15rem 0;
+}
+.form{
+    width: 80%;
+    margin: 0 auto;
+    &__group:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+    &__element{
+        display: inline-block;
+        width: 48%;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+        &--full{
+            display: block;
+            width: 99.5%;
+        }
+    }
+    &__text,
+    &__input{
+        display: block;
+        width: 100%;
+        color: inherit;
+        padding: 2rem 3rem;
+        border: 2px solid #ccc;
+        font-family: inherit;
+        &:focus{
+            outline: none;
+            border-bottom: 3px solid orange;
+        }
+        &:focus:invalid{
+            border-bottom: 3px solid $color-primary-medium;
+        }
+        &::placeholder{
+            font-size: 1.6rem;
+            color: #999;
+        }
+    }
+    &__label{
+        display: block;
+        margin: 0.6rem 0 0 3rem;
+        font-size: 1.4rem;
+        color: #999;
+        transition: all 0.3s;
+        // opacity: 0;
+    }
+    &__input:placeholder-shown+&__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}

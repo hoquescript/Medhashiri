@@ -1,0 +1,71 @@
+.section-about-news {
+    padding: 10rem 0rem; // background-color: $color-secondary-dark;
+}
+.about{
+    &__text{
+        font-size: 1.6rem;
+        font-weight: normal;
+        word-spacing: 1rem;
+        text-align: left;
+    }
+}
+.news{
+    height: 40rem;
+    width: 100%;
+    padding: 8rem 0;
+
+    &__title{
+        display: block;
+        padding: 3rem;
+        margin-bottom: 2px solid black;
+        background: $gradient-primary;
+        color: #fff;
+    }
+    &__wrapper{
+        padding: 1rem 2rem;
+        max-height: 30rem;
+        overflow: hidden;
+        background-color: #f4f4f4;
+    }
+    &__headline{
+        display: block;
+        border-bottom: 1px solid #bbb;
+        color: $color-primary-dark;
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        
+    }
+}
+
+
+.section-branch {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    padding: 10rem 0;
+}
+
+.section-whyUs {
+    padding: 15rem 0rem;
+}
+
+.section-features {
+    padding: 12rem 0;
+    background: linear-gradient(to right, #200122, #6f0000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-school {
+    padding: 10rem 0rem;
+    &__logo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section-footer {
+    padding: 10rem 0;
+    background-color: #220C23;
+    // background: linear-gradient(to right, rgba(37, 3, 10, 0.9), rgba(37, 3, 10, 0.9)), url('../img/IMG20170920125558.jpg');
+}

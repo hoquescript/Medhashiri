@@ -1,0 +1,86 @@
+.slider {
+    position: relative;
+    max-height: 60vh;
+
+    &__arrow {
+        font-size: 5rem;
+        color: rgba(255,255,255, 0.7);
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        transition: all 1s ease;
+        &:hover {
+            color: rgba($color-primary-dark, 0.5);
+        }
+        &--left {
+            left: 30px;
+        }
+        &--right {
+            right: 30px;
+        }
+    }
+    &:hover &__arrow{
+        opacity: 1;
+    }
+    &__slide {
+        width: 100%;
+        height: 60vh;
+        background-repeat: no-repeat;
+        // background-attachment: fixed;
+        background-size: cover;
+        transition: all 5s ease-in;
+        &--1 {
+            background-image: url('../img/slider/slide1.jpg');
+            // background-position: 0 -10rem;
+        }
+        &--2 {
+            background-image: url('../img/slider/slide2.jpg');
+            // background-position: 0 9.5rem;
+        }
+        &--3 {
+            background-image: url('../img/slider/slide3.jpg');
+            // background-position: 0 4rem;
+        }
+        &--4 {
+            background-image: url('../img/slider/slide4.jpg');
+            // background-position: 0 13rem;
+        }
+        &--5 {
+            background-image: url('../img/slider/slide5.jpg');
+            // background-position: 0 13.5rem;
+        }
+        &--6 {
+            background-image: url('../img/slider/slide6.jpg');
+            // background-position: 0 13rem;
+        }
+        &--7 {
+            background-image: url('../img/slider/slide7.jpg');
+            // background-position: 0 6rem;
+        }
+        &--8 {
+            background-image: url('../img/slider/slide8.jpg');
+            // background-position: 0 19rem;
+        }
+    }
+    &__dots {
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+
+    }
+    &__dot {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border: 4px solid $color-primary-dark;
+        border-radius: 50%;
+        margin: 0 10px;
+        background-color:  #fff;
+        transition: all 0.3s linear;
+        &:hover {
+            background-color:  #BB2522;
+            transform: translateY(-5px) scale(1.03);
+        }
+    }
+}

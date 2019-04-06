@@ -1,0 +1,38 @@
+.section-stuffs {
+    padding: 10rem 0;
+}
+
+.stuff {
+    height: 28rem;
+    width: 24rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1.5rem 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+
+    &__img {
+        margin: 0 auto;
+        height: 16rem;
+        width: 16rem;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid #666;
+    }
+
+    &__text {
+        margin-top: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.4);
+        background-color: #fff;
+
+    }
+
+}

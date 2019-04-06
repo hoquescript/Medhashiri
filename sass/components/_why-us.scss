@@ -1,0 +1,40 @@
+.accordion {
+    width: 100%;
+    margin-bottom: 3rem;
+    // border-top: 2px solid $color-primary-dark;
+    border: 2px solid $color-primary-medium;
+    &__btn {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: left;
+        padding:1.5rem 1rem;
+        background-color: #fff;
+        cursor: pointer;
+        border: 0;
+        width: 100%;
+        transition: all .8s ease;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: $color-primary-medium !important;
+            color: #fff !important;
+
+        }
+        &::after {
+            content: '\f103';
+            font-family: 'fontawesome';
+            font-size: 2rem;
+            float: right;
+            margin: 0 1rem;
+            font-weight: bolder;
+        }
+    }
+    &__content {
+        font-size: 1.6rem;
+        max-height: 0;
+        margin-left: 2rem;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+}

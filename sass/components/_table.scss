@@ -1,0 +1,11 @@
+.section-schedule{
+    padding: 10rem 0;
+}
+.schedule{
+    font-size: 1.6rem;
+    border: 2px solid red;
+    &__row{
+        background-color: green;
+    }
+}
+

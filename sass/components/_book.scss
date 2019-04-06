@@ -1,0 +1,35 @@
+.book {
+    position: relative;
+    height: 35rem;
+    width: 100%;
+    background-image: url(../img/page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    perspective: 100rem;
+    &__cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $color-secondary-dark;
+        transform-style: preserve-3d;
+        transform-origin: left;
+        transition: all .8s ease;
+    }
+    &:hover &__cover {
+        transform: rotateY(-60deg);
+    }
+    &__icon {
+        font-size: 8rem;
+        height: 50%;
+        color: #1F1D04;
+        @include centering;
+    }
+    &__text {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0 2rem;
+        height: 50%;
+        @include centering;
+        background-color: #eee;
+    }
+}

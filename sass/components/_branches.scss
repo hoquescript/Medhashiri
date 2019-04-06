@@ -1,0 +1,61 @@
+.branch {
+    position: relative;
+    perspective: 100rem;
+    -moz-perspective: 100rem;
+    height: 25rem;
+    width: 100%;
+    &__side {
+        width: 100%;
+        height: 25rem;
+        transition: all 1.5s linear;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        &--front {
+            background: -webkit-linear-gradient(to right, #363795, #005C97);
+            background: linear-gradient(to right, #363795, #005C97);
+            &__text {
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: #fff;
+                font-size: 2.5rem;
+            }
+        }
+        &--back {
+            transform: rotateY(-180deg);
+            display: flex;
+                justify-content: center;
+                align-items: center;
+            &__text{
+                padding: 1rem;
+                font-size: 1.6rem;
+                text-align: center;
+                font-weight: 700;
+            }
+            &-1{
+                background-color: #FFEF10;
+            }
+            &-2{
+                background-color: #C9E6F4;
+            }
+            &-3{
+                background-color: #FED9C7;
+            }
+            &-4{
+                background-color: #DFE695;
+            }
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+}
